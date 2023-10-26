@@ -1,5 +1,7 @@
 # clear existing rule on table nat
+```
 iptables -t nat -F
+```
 
 # forward traffic on port 23 to anotherip:port
 sudo iptables -t nat -A PREROUTING -p tcp --dport 23 -j DNAT --to-destination 192.168.100.92:22
